@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: configuration-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/knightbarin98/configuration-files.git
+          cloneOnStart: true
+          username: knightbarin98
+          password: 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
+          defaultLabel: main
+server:
+  port: 8888
+
+eureka: 
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
